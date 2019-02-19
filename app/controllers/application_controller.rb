@@ -20,10 +20,10 @@ class ApplicationController < ActionController::API
 
   # This method response with a error message.
   def response_error(args = {})
-    opts = { code: 420 }.merge(args)
-    opts[:message] ||= t("api.http_response.errors.error_#{opts[:code]}")
-
+    opts = { code: 422 }.merge(args)
+    opts[:message] ||= "la petición es correcta pero tiene algún error semántico."
     render status: opts[:code], json: {
+      code: opts[:code],
       error: opts[:message]
     }
   end
