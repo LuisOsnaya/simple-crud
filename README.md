@@ -1,24 +1,11 @@
-# README
+# Luis Osnet Portfolio  :steam_locomotive::train::train::train::train::train:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-Things you may want to cover:
+## Install
 
-* Ruby version
+- bundle
 
-* System dependencies
+- rails db:create db:migrate
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- rails s
