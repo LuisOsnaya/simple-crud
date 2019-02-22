@@ -13,24 +13,44 @@
 
 ## Endpoint
 
-- get `localhost:3000/students/`
-- get `localhost:3000/students/:id`
-- post `localhost:3000/students/`
+### Students
+	- get `localhost:3000/students/`
+	- get `localhost:3000/students/:id`
+	- post `localhost:3000/students/`
+		```
+			{
+				"name": "Luis",
+				"first_last_name": "Osnaya",
+				"second_last_name": "Balderas",
+				"status": "single"
+			}
+		```
+	- put `localhost:3000/students/:id`
+		```
+			{
+				"name": "Luis",
+				"first_last_name": "Osnaya",
+				"second_last_name": "Balderas",
+				"status": "single"
+			}
+		```
+	- delete `localhost:3000/students/:id`
+
+### Task
+- get `localhost:3000/tasks/`
+- get `localhost:3000/tasks/:id`
+- post `localhost:3000/tasks/`
+```
+	{
+		"name": "Primer tarea"
+	}
+```
+- put `localhost:3000/tasks/:id`
 	```
 		{
-			"name": "Luis",
-			"first_last_name": "Osnaya",
-			"second_last_name": "Balderas",
-			"status": "single"
+			"name": "Actualiza tarea"
 		}
 	```
-- put `localhost:3000/students/:id`
-	```
-		{
-			"name": "Luis",
-			"first_last_name": "Osnaya",
-			"second_last_name": "Balderas",
-			"status": "single"
-		}
-	```
-- delete `localhost:3000/students/:id`
+- delete `localhost:3000/tasks/:id`
+
+	- put `localhost:3000/tasks/:id/assign_student/:id`
